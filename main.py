@@ -17,7 +17,11 @@ def encoder(password):
 
 
 def decoder(password):
-    pass
+    password = str(password) #Katherine: converting again to a string
+    decode_password = ''
+    for i in password: #reverse of the encoder function
+	decode_password += int(i)-3
+    return decode_password
 
 
 # print menu
@@ -58,7 +62,7 @@ if __name__ == '__main__':
 
         # decode password
         elif user_selection == 2:
-
+	    
             # print old and new password
             print(f'The encoded password is {user_password} and the original password is {decoder(user_password)}.')
 
