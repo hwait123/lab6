@@ -20,7 +20,7 @@ def decoder(password):
     password = str(password) #Katherine: converting again to a string
     decode_password = ''
     for i in password: #reverse of the encoder function
-	decode_password += str(int(i)-3)
+	    decode_password += str(int(i)-3) # Hannah Wait added indentation
     return decode_password
 
 
